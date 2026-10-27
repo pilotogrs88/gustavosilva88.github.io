@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07100d">
+<meta name="description" content="SIM Virtual 1.4 — downloads, carros, pistas e telemetria para Assetto Corsa.">
+<title>SIM Virtual 1.4 🏁 | Central de downloads</title>
+<style>
+:root{color-scheme:dark;--bg:#060a09;--panel:#101715;--line:#26362f;--green:#9cff57;--lime:#c2ff76;--muted:#a8b4ac;--white:#f4f7f4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% -10%,#30432d 0,transparent 47%),linear-gradient(160deg,#101916 0%,#060a09 55%,#0d1511 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.13;background-image:linear-gradient(135deg,transparent 48%,#baff8b 49%,#baff8b 50%,transparent 51%);background-size:34px 34px;mask-image:linear-gradient(to bottom,black,transparent 62%)}
+a{color:inherit}.wrap{width:min(100% - 30px,720px);margin:auto;padding:24px 0 42px}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}
+.pill{border:1px solid #435b3a;background:#18251a;border-radius:999px;padding:5px 10px;color:var(--lime);letter-spacing:.06em}
+.hero{position:relative;overflow:hidden;margin:22px 0 22px;padding:32px 24px 28px;border:1px solid #344438;border-radius:25px;background:linear-gradient(145deg,rgba(26,39,31,.96),rgba(9,14,12,.96));box-shadow:0 22px 70px #0008}
+.hero:before{content:"";position:absolute;width:250px;height:250px;right:-80px;top:-80px;border:1px solid #aaff5730;border-radius:50%;box-shadow:0 0 0 22px #aaff5708,0 0 0 46px #aaff5705}
+.hero:after{content:"";position:absolute;width:190px;height:190px;right:-45px;top:-48px;border:1px dashed #b8ff6c45;border-radius:50%}
+.mark{position:relative;z-index:1;width:66px;height:66px;display:grid;place-items:center;border:1px solid #8bba6c;border-radius:18px;background:#17251a;color:var(--lime);font-weight:900;font-size:1.25rem;letter-spacing:-.08em;box-shadow:inset 0 0 24px #aaff5710}
+.kicker{margin:22px 0 5px;color:var(--lime);font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+h1{position:relative;z-index:1;margin:0;max-width:520px;font-size:clamp(2.4rem,9vw,4.7rem);line-height:.98;letter-spacing:-.065em;font-weight:900}
+h1 span{color:var(--lime)}.intro{position:relative;z-index:1;max-width:470px;margin:17px 0 0;color:#c4cec6}
+.hero-foot{position:relative;z-index:1;display:flex;align-items:center;gap:9px;margin-top:24px;color:#d9e5da;font-size:.78rem}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 12px #b7ff71}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:28px 2px 12px}.section-head h2{margin:0;font-size:1.18rem;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted);font-size:.78rem}
+.links{display:grid;gap:10px}
+.link{display:flex;align-items:center;gap:14px;text-decoration:none;border:1px solid var(--line);border-radius:17px;background:linear-gradient(110deg,#121a16,#0d1310);padding:15px;transition:transform .18s,border-color .18s,background .18s}
+.link:hover,.link:focus-visible{transform:translateY(-2px);border-color:#85b95b;background:#18231a;outline:none}
+.iconbox{flex:0 0 46px;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:#1d2b1e;color:var(--lime);border:1px solid #3b5735}
+.iconbox svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.linkcopy{min-width:0;flex:1}.linkcopy strong{display:block;font-size:1rem;line-height:1.3}.linkcopy small{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}.arrow{color:var(--lime);font-size:1.25rem}
+.primary{border-color:#779d58;background:linear-gradient(110deg,#1b2c1b,#101812)}
+.steps{margin-top:12px;border:1px solid var(--line);border-radius:19px;background:#0d1310;padding:7px 18px}
+.step{display:grid;grid-template-columns:35px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid #253129}.step:last-child{border-bottom:0}
+.num{width:31px;height:31px;border:1px solid #607c4b;border-radius:10px;display:grid;place-items:center;color:var(--lime);font-size:.8rem;font-weight:800;background:#192419}
+.step h3{margin:0;font-size:.96rem}.step p{margin:5px 0 0;color:var(--muted);font-size:.87rem}
+.note{margin-top:14px;padding:13px 15px;border-left:3px solid var(--lime);border-radius:0 12px 12px 0;background:#141e16;color:#c4cec6;font-size:.84rem}
+.note strong{color:var(--white)}
+.telemetry{margin-top:12px;padding:18px;border:1px solid #344438;border-radius:18px;background:linear-gradient(125deg,#17241a,#0d1310)}
+.telemetry h3{margin:0 0 4px;font-size:1.03rem}.telemetry p{margin:0 0 13px;color:var(--muted);font-size:.85rem}
+.small-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#091007;background:var(--lime);font-weight:850;border-radius:10px;padding:10px 13px;font-size:.84rem}
+footer{text-align:center;padding:27px 8px 0;color:#7f8e83;font-size:.72rem;letter-spacing:.08em}
+@media(min-width:600px){.wrap{padding-top:35px}.hero{padding:38px 36px 32px}.links{grid-template-columns:1fr 1fr}.link:first-child{grid-column:1/-1}.section-head{margin-top:34px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="topline"><span>Central da comunidade</span><span class="pill">SIMRACING · AC</span></div>
+<header class="hero">
+<div class="mark" aria-hidden="true">1.4<span>🏁</span></div>
+<p class="kicker">Treino • evolução • pista</p>
+<h1>SIM VIRTUAL<br><span>1.4</span></h1>
+<p class="intro">Tudo para começar a acelerar no simulador: Content Manager, carros, pistas e telemetria. Segue o passo a passo antes de abrir o jogo.</p>
+<div class="hero-foot"><span class="dot"></span> Recursos organizados pela comunidade</div>
+</header>
+
+<div class="section-head"><h2>Downloads</h2><p>Começa pelo primeiro link</p></div>
+<nav class="links" aria-label="Links de download">
+<a class="link primary" href="https://acstuff.club/app/" target="_blank" rel="noopener noreferrer">
+<span class="iconbox"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5"/><path d="M4 17v3h16v-3"/></svg></span>
+<span class="linkcopy"><strong>01 · Content Manager</strong><small>Baixa o gerenciador do Assetto Corsa</small></span><span class="arrow">↗</span>
+</a>
+<a class="link" href="https://drive.google.com/drive/folders/1Sqnqw2BQ0Vclp3i4lMpmPV07tJQ5Zox6?usp=sharing" target="_blank" rel="noopener noreferrer">
+<span class="iconbox"><svg viewBox="0 0 24 24"><path d="M3 7.5h7l2 2H21v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 7V5a2 2 0 0 1 2-2h5l2 2h5"/></svg></span>
+<span class="linkcopy"><strong>02 · Carros e pistas</strong><small>Abre a pasta compartilhada do Drive</small></span><span class="arrow">↗</span>
+</a>
+<a class="link" href="https://drive.google.com/drive/folders/1Bzx1KwMO7z6SLn7tnaLgv-rK69uPLe-T?usp=sharing" target="_blank" rel="noopener noreferrer">
+<span class="iconbox"><svg viewBox="0 0 24 24"><path d="M3 12h3l3-8 5 16 3-8h4"/></svg></span>
+<span class="linkcopy"><strong>03 · Arquivos de telemetria</strong><small>Baixa os arquivos necessários</small></span><span class="arrow">↗</span>
+</a>
+</nav>
+
+<div class="section-head"><h2>Instalação passo a passo</h2><p>Segue a ordem</p></div>
+<section class="steps" aria-label="Tutorial de instalação">
+<div class="step"><span class="num">01</span><div><h3>Instala o Content Manager</h3><p>Abre o primeiro link, baixa o arquivo e extrai para uma pasta no computador. Depois, executa o Content Manager.</p></div></div>
+<div class="step"><span class="num">02</span><div><h3>Faz a configuração inicial</h3><p>Na primeira abertura, indica a pasta onde o Assetto Corsa está instalado e conclui as configurações solicitadas pelo programa.</p></div></div>
+<div class="step"><span class="num">03</span><div><h3>Baixa os carros e as pistas</h3><p>Abre o Drive e baixa os carros e circuitos que deseja instalar. Mantém os arquivos baixados acessíveis no computador.</p></div></div>
+<div class="step"><span class="num">04</span><div><h3>Arrasta os arquivos para o Content Manager</h3><p>Arrasta o arquivo compactado do carro ou da pista para dentro da janela do Content Manager. Quando aparecer a janela de instalação, confirma em <strong>Install</strong>.</p></div></div>
+<div class="step"><span class="num">05</span><div><h3>Confere se instalou</h3><p>Aguarda a conclusão. O indicador de notificações no canto superior direito — os três risquinhos verdes — mostra o estado das instalações. Confere também se o carro ou a pista aparece na lista de conteúdo.</p></div></div>
+<div class="step"><span class="num">06</span><div><h3>Instala e configura a telemetria</h3><p>Baixa os arquivos no Drive da telemetria e segue o tutorial em vídeo logo abaixo.</p></div></div>
+</section>
+<div class="note"><strong>Dica:</strong> instala um arquivo por vez e confere se a instalação terminou antes de começar a próxima. Alguns arquivos podem vir dentro de ZIP/RAR; se o Content Manager não aceitar o arquivo, extrai e confere o conteúdo antes de tentar novamente.</div>
+
+<div class="section-head"><h2>Telemetria</h2><p>Tutorial em vídeo</p></div>
+<section class="telemetry">
+<h3>Como instalar a telemetria</h3>
+<p>Assiste ao tutorial completo e acompanha as etapas junto com os arquivos baixados.</p>
+<a class="small-link" href="https://youtu.be/EEVGS0dR5d4?si=awdMNNtXyzQEOgHi" target="_blank" rel="noopener noreferrer">Assistir tutorial no YouTube <span aria-hidden="true">↗</span></a>
+</section>
+<footer>SIM VIRTUAL 1.4 🏁<br>Feito para facilitar o acesso aos recursos da comunidade.</footer>
+</main>
+</body>
+</html>
